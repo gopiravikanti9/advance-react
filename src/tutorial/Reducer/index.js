@@ -1,5 +1,6 @@
 import React from 'react'
-function Index() {
+function Index()
+{
     return (
         <h2>Use Reducer</h2>
     )
