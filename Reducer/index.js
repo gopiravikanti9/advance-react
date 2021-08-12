@@ -1,21 +1,56 @@
 import React, { useState, useReducer } from 'react'
 import Modal from "./Modal";
 import { data } from "../data";
+//lets imort reducer
+import { Reducer } from './Reducer';
+const reducer = (state, action) => {
+
+}
+const defaultState = {
+    people: data,
+    isModalOpen: false,
+    modalContent: "",
+}
+
 function Index() {
-    const [name, setName] = useState('')
-    const [people, setPeople] = useState(data);
-    const [showModal, setShowModal] = useState(data);
+    const [name, setName] = useState('')//use stAte to take name input
+    const [state, dispatch] = useReducer(reducer, defaultState)
+    //const [people,setPeople] = useState(data);//we have created a program where w e are taking values from user and dis[laying the same]
+    //const [showModal,setShowModal] = useState(false);
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (name) {
+            const newItem = { id: new Date().getTime().toString(), name };
+            dispatch({ type: "ADD_ITEM", payload: newItem });
+            setName("");
+        }
+        else {
+            dispatch({ type: 'NO_VALUE' });
+        }
+    }
+    const closeModal = () => {
+        dispatch({ type: 'CLOSE_MODAL' });
     }
     return (<>
-        {showModal && <Modal />}
+        { }
+        {state.isModalOpen && (<Modal closeModal={closeModal} modalContent={state.modalContent} />)}
         <form onSubmit={handleSubmit} className='form'>
             <div>
                 <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
             </div>
             <button type="submit"> add user</button>
         </form>
+        {state.people.map((person) => {
+            return <>
+                <div key={person.id} className='item'>
+                    <h4>{person.name}</h4>
+                    <button onClick={() =>
+                        dispatch({ type: "REMOVE_ITEM", payload: person.id })}>remove</button>
+
+                </div>
+            </>
+        }
+        )}
     </>
 
     )
