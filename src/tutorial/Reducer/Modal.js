@@ -7,4 +7,8 @@ function Modal({ modalContent }) {
         </>
     )
 }
+<<<<<<< HEAD
 export default Modal
+=======
+export default Modal
+>>>>>>> e848c2bf223fa663244fc6729038feb9f14b78d0

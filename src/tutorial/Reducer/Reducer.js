@@ -26,4 +26,8 @@ export const reducer = (state, action) => {
         return { ...state, people: newPeople };
     }
     throw new Error("no Matching action type");
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e848c2bf223fa663244fc6729038feb9f14b78d0
