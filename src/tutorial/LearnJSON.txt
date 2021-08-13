@@ -1,0 +1,5 @@
+JS Debugging using chrome tools 	    https://youtu.be/H0XScE08hy8
+for further reference on debugging	    https://youtu.be/geIztShEk6I
+JS Destructuring	                    https://youtu.be/NIq3qLaHCIs
+to start a json server	                json-server db.json --port=4000
+to install json server 	                npm i -g json-server
