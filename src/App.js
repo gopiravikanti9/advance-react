@@ -1,29 +1,32 @@
-import React from "react";
-import Forms from "./Tutorial/Forms";
-import LearnJSON from "./Tutorial/LearnJSON";
-import Index from "./Tutorial/Reducer";
-import ToDo from "./Tutorial/ToDo";
-import UseEffectsBasics from "./Tutorial/UseEffectsBasics";
-import UseStateArray from "./Tutorial/UseStateArray";
-import UseStateBasic from "./Tutorial/UseStateBasic"; import UseStateCounter from "./Tutorial/UseStateCounter";
-import UseStateExample from "./Tutorial/useStateExample";
-import UseStateObject from "./Tutorial/UseStateObject";
+import React from 'react';
+import ReactRouterDom from './tutorial/React-Router/index.js'
+// import MyToDoList from './tutorial/MyToDoList';
+// import LearningJSON from './tutorial/LearningJSON';
+// import Index from './tutorial/Reducer';
+// import Forms from './tutorial/Forms';
+// import UseEffectBasic from './tutorial/UseEffectBasic';
+//import UseStateCounter from './tutorial/UseStateCounter';
+//import UseStateObject from './tutorial/UseStateObject';
+//import UseStateArray from './tutorial/UseStateArray';
+//import UseStateBasic from './tutorial/UseStatebasic';
+// import UseStateErrorEx from './tutorial/useStateErrorEx';
+
 function App() {
   return (
-    <div className="container">
-      <header className="App-header">
-        <h1>Advance React</h1>
-        {/* <UseStateExample/> */}
-        {/* <UseStateBasic/> */}
-        {/* <UseStateArray/> */}
-        {/* <UseStateObject/> */}
-        {/* <UseStateCounter/> */}
-        {/* <UseEffectsBasics/> */}
-        {/* <Forms/> */}
-        {/* <ToDo/> */}
-        {/* <LearnJSON/> */}
-        <Index />
-      </header>
+    <div className='container'>
+      {/* <h2>Advance React js</h2> */}
+      {/* <UseStateErrorEx /> */}
+      {/* <UseStateBasic /> */}
+
+      {/* <UseStateArray /> */}
+      {/* <UseStateObject />      */}
+      {/* <UseStateCounter /> */}
+      {/* <UseEffectBasic /> */}
+      {/* <Forms /> */}
+      {/* <LearningJSON /> */}
+      {/* <Index /> */}
+      <ReactRouterDom />
+      {/* <MyToDoList /> */}
     </div>
   );
 }
