@@ -8,7 +8,7 @@ function Person() {
     useEffect(() => {
         const newPerson = data.find((person) => person.id === parseInt(id));
         setName(newPerson.name)
-    })
+    }, [])
     return (
         <>
             <div>

@@ -1,5 +1,7 @@
 import React from 'react';
-import ReactRouterDom from './tutorial/React-Router/index.js'
+import ContextAPI from './tutorial/Context';
+// import PropDrilling from './tutorial/Prop-Drilling';
+// import ReactRouterDom from './tutorial/React-Router';
 // import MyToDoList from './tutorial/MyToDoList';
 // import LearningJSON from './tutorial/LearningJSON';
 // import Index from './tutorial/Reducer';
@@ -25,7 +27,9 @@ function App() {
       {/* <Forms /> */}
       {/* <LearningJSON /> */}
       {/* <Index /> */}
-      <ReactRouterDom />
+      {/* <ReactRouterDom /> */}
+      {/* <PropDrilling /> */}
+      <ContextAPI />
       {/* <MyToDoList /> */}
     </div>
   );
